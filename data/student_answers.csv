@@ -1,0 +1,61 @@
+answer_id,question_id,student_answer,human_score,concepts_present
+A01,Q1,"A deadlock happens when a set of processes are permanently blocked because each one is waiting for a resource that another process in the set is holding. Four conditions must all be true: mutual exclusion, hold and wait, no preemption and circular wait. The OS can deal with deadlock through prevention, avoidance using the Banker's algorithm, or by detecting it and recovering.",10,waiting;mutex;hold_wait;no_preempt;circular;handling
+A02,Q1,"Deadlock is when two or more processes wait forever for resources held by each other. It needs mutual exclusion, hold and wait, no preemption and a circular wait among the processes.",8.5,waiting;mutex;hold_wait;no_preempt;circular
+A03,Q1,"In a deadlock, processes are stuck because each holds some resource and waits for another resource that is held by a different process, forming a cycle. Resources cannot be taken away from a process once allocated.",7,waiting;hold_wait;no_preempt;circular
+A04,Q1,"Deadlock occurs when processes wait for resources that are being used by other processes. The processes cannot continue their execution.",5,waiting
+A05,Q1,"Deadlock means the system hangs. It has four conditions: mutual exclusion, hold and wait, no preemption and circular wait.",5.5,mutex;hold_wait;no_preempt;circular
+A06,Q1,"Deadlock is when the CPU is too busy and processes run slowly, so the system becomes unresponsive.",1.5,
+A07,Q1,"When the computer freezes.",1,
+A08,Q1,"A deadlock is a state where every process in a group is waiting for an event that only another process in that group can cause, usually releasing a resource. It can be avoided using the Banker's algorithm or detected using a wait-for graph.",6,waiting;handling
+A09,Q1,"Paging divides memory into fixed size blocks called pages.",0,
+A10,Q1,"Deadlock: processes block indefinitely waiting for resources held by other processes. Conditions are mutual exclusion (non-shareable resources), hold and wait, and circular wait. It can be prevented by breaking any one condition.",7.5,waiting;mutex;hold_wait;circular;handling
+B01,Q2,"Normalization organizes the tables of a relational database so that redundant data is eliminated and data integrity is maintained. Large tables are decomposed into smaller ones using functional dependencies, which removes insertion, update and deletion anomalies. The normal forms are 1NF (atomic values), 2NF (no partial dependency), 3NF (no transitive dependency) and BCNF.",9.5,redundancy;anomalies;decomposition;fd;normal_forms;integrity
+B02,Q2,"Normalization is used to reduce duplicate data in a database by splitting a big table into smaller tables and linking them with keys. Common forms are 1NF, 2NF and 3NF.",7,redundancy;decomposition;normal_forms
+B03,Q2,"Normalization means reducing redundancy in databases.",4,redundancy
+B04,Q2,"It is the process of applying 1NF, 2NF, 3NF and BCNF to tables.",4.5,normal_forms
+B05,Q2,"The goal of normalization is to store each fact only once so that changing it in one place keeps the database consistent and avoids problems when inserting or deleting rows. We do this by breaking tables apart according to which attributes depend on which keys.",7.5,redundancy;anomalies;decomposition;fd;integrity
+B06,Q2,"Normalization is converting all values in a column to a range between 0 and 1.",1,
+B07,Q2,"Normalization makes the database faster.",2,
+B08,Q2,"Normalization removes anomalies such as update anomaly and deletion anomaly. It uses functional dependencies.",5.5,anomalies;fd
+B09,Q2,"TCP is a connection oriented protocol.",0,
+B10,Q2,"Normalization decomposes relations into smaller relations to eliminate redundancy and the insertion, update and deletion anomalies it causes. Each step removes a type of dependency: 2NF removes partial dependencies and 3NF removes transitive dependencies.",8,redundancy;anomalies;decomposition;fd;normal_forms
+C01,Q3,"Both TCP and UDP work at the transport layer. TCP is connection-oriented and sets up a connection using a three-way handshake; it is reliable because it uses acknowledgements and retransmission and delivers data in order. UDP is connectionless and unreliable, but it is faster with less overhead. TCP suits web browsing and file transfer, UDP suits video streaming, gaming and DNS.",9.5,transport;connection;reliability;ordering;speed;use_cases
+C02,Q3,"TCP is reliable and connection oriented while UDP is unreliable and connectionless. UDP is faster than TCP.",6.5,connection;reliability;speed
+C03,Q3,"TCP is slow and UDP is fast.",3,speed
+C04,Q3,"TCP makes sure every packet arrives and in the correct sequence, resending lost packets, after first setting up a session between both ends. UDP just fires packets off with no setup and no guarantee, which is why live video calls and games prefer it - lower delay matters more than a few lost packets.",8,connection;reliability;ordering;speed;use_cases
+C05,Q3,"TCP stands for Transmission Control Protocol and UDP stands for User Datagram Protocol.",2,
+C06,Q3,"TCP uses a three-way handshake to make a connection. UDP does not. TCP is used for email and UDP is used for DNS.",5.5,connection;use_cases
+C07,Q3,"TCP and UDP are types of cables used to connect computers in a network.",0.5,
+C08,Q3,"TCP is a reliable, connection-oriented transport layer protocol with flow control and congestion control. UDP is a connectionless transport protocol with low latency, used in streaming.",7.5,transport;connection;reliability;speed;use_cases
+C09,Q3,"Normalization reduces redundancy.",0,
+C10,Q3,"UDP is used for video streaming and online games and TCP is used for websites.",3.5,use_cases
+D01,Q4,"Virtual memory lets programs use more memory than is physically present by keeping part of their data on disk. The MMU translates virtual addresses into physical addresses using page tables. Pages are loaded on demand, and a page fault occurs when a page is not in RAM. When RAM is full, page replacement algorithms like LRU or FIFO decide which page to swap out, and excessive swapping causes thrashing.",9.5,illusion;disk;translation;paging;replacement;thrashing
+D02,Q4,"Virtual memory uses the hard disk as extra RAM so that larger programs can run. It works using paging and page faults.",6,illusion;disk;paging
+D03,Q4,"Virtual memory is memory that is not real.",2,
+D04,Q4,"Each process sees a virtual address space; the MMU maps virtual addresses to physical addresses through a page table.",5.5,translation
+D05,Q4,"Virtual memory: paging, page fault, LRU, FIFO, thrashing.",4,paging;replacement;thrashing
+D06,Q4,"Virtual memory is the cache memory inside the CPU that stores frequently used data.",1,
+D07,Q4,"With virtual memory a program believes it has a huge contiguous memory, but only the parts currently in use sit in RAM while the rest stays on the SSD. Missing parts are brought in when touched, and if the system keeps moving parts back and forth too often, performance collapses.",7,illusion;disk;paging;thrashing
+D08,Q4,"A deadlock occurs when processes wait for each other.",0,
+D09,Q4,"Virtual memory is a technique where secondary storage is used as an extension of main memory. Programs are divided into pages, which are loaded only on demand; if a needed page is absent a page fault occurs and a replacement algorithm picks a victim page.",7,disk;paging;replacement
+D10,Q4,"Virtual memory increases RAM size permanently.",1.5,
+E01,Q5,"Overfitting is when a model memorizes the training data, noise included, so it scores very well on training data but badly on new, unseen data - it does not generalize. It is caused by a model that is too complex for the data and shows high variance and low bias. Fixes include more data, L1/L2 regularization, dropout, early stopping and cross-validation.",9.5,memorize;gap;generalize;complexity;variance;remedies
+E02,Q5,"Overfitting means the model gives high accuracy on training data but low accuracy on test data. It can be fixed with regularization or dropout.",6.5,gap;remedies
+E03,Q5,"Overfitting is when the model is too good.",2,
+E04,Q5,"An overfit model has essentially learned the quirks of its particular training examples rather than the real relationship, so its predictions fall apart on data it has not seen before. Giving it fewer parameters, penalising large weights or collecting more examples helps.",7.5,memorize;gap;remedies
+E05,Q5,"Overfitting is when the model is too simple and cannot learn the pattern in the training data.",1,
+E06,Q5,"Overfitting: high variance, low bias. Remedies are regularization, dropout and early stopping.",4.5,variance;remedies
+E07,Q5,"Overfitting happens when a model fits noise in the training data and therefore fails to generalize to new data.",6.5,memorize;gap;generalize
+E08,Q5,"UDP is a connectionless protocol.",0,
+E09,Q5,"When a model is too complex relative to the dataset it learns noise instead of the signal. Training error becomes very low while test error is high, i.e. the model fails to generalise. Cross-validation helps detect it and regularisation helps prevent it.",8.5,memorize;gap;generalize;complexity;remedies
+E10,Q5,"Overfitting occurs when there is too much data.",1.5,
+F01,Q6,"CPU scheduling is how the OS decides which process from the ready queue runs next on the CPU, keeping the CPU busy in a multiprogramming system. It can be preemptive or non-preemptive. Algorithms include FCFS, SJF, priority scheduling and round robin, which uses a time quantum. Performance is measured with CPU utilization, throughput, turnaround time, waiting time and response time.",9.5,ready_queue;preemptive;algorithms;quantum;criteria;utilization
+F02,Q6,"CPU scheduling algorithms are FCFS, SJF, Priority and Round Robin. Round robin uses a time quantum.",5.5,algorithms;quantum
+F03,Q6,"The scheduler picks one of the waiting ready processes to run so the processor is never idle. Some schedulers can take the CPU away from a running process when a more important one arrives.",6,ready_queue;preemptive;utilization
+F04,Q6,"Scheduling is making a timetable for tasks.",1.5,
+F05,Q6,"CPU scheduling selects a process from the ready queue to execute. In non-preemptive scheduling like FCFS the process runs until it finishes, while preemptive algorithms like round robin switch processes after each time slice. Goals are high throughput and low waiting time.",8,ready_queue;preemptive;algorithms;quantum;criteria
+F06,Q6,"CPU scheduling is increasing the clock speed of the CPU.",0.5,
+F07,Q6,"It decides which process gets the CPU next.",4,ready_queue
+F08,Q6,"Virtual memory uses disk as RAM.",0,
+F09,Q6,"CPU scheduling chooses the next process to run. FCFS, SJF and round robin are examples; SJF minimizes average waiting time and round robin is good for response time.",6.5,ready_queue;algorithms;criteria
+F10,Q6,"Round robin, FCFS, SJF.",3,algorithms

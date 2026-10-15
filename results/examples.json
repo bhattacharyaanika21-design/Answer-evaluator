@@ -1,0 +1,245 @@
+{
+  "A04": {
+    "question": "Explain deadlock in an operating system.",
+    "answer": "Deadlock occurs when processes wait for resources that are being used by other processes. The processes cannot continue their execution.",
+    "teacher_score": 5.0,
+    "score": 5.5,
+    "max_marks": 10,
+    "semantic_similarity": 0.902716013101431,
+    "concept_coverage": 0.2857142857142857,
+    "completeness": 0.4860557950565917,
+    "concepts": [
+      {
+        "id": "waiting",
+        "name": "Processes blocked waiting for each other's resources",
+        "weight": 2,
+        "found": true,
+        "method": "keyword",
+        "evidence": "waiting for resource",
+        "confidence": 1.0
+      },
+      {
+        "id": "mutex",
+        "name": "Mutual exclusion",
+        "weight": 1,
+        "found": false,
+        "method": null,
+        "evidence": null,
+        "confidence": 0.157
+      },
+      {
+        "id": "hold_wait",
+        "name": "Hold and wait",
+        "weight": 1,
+        "found": false,
+        "method": null,
+        "evidence": null,
+        "confidence": 0.209
+      },
+      {
+        "id": "no_preempt",
+        "name": "No preemption",
+        "weight": 1,
+        "found": false,
+        "method": null,
+        "evidence": null,
+        "confidence": 0.105
+      },
+      {
+        "id": "circular",
+        "name": "Circular wait",
+        "weight": 1,
+        "found": false,
+        "method": null,
+        "evidence": null,
+        "confidence": 0.24
+      },
+      {
+        "id": "handling",
+        "name": "Handling: prevention / avoidance / detection",
+        "weight": 1,
+        "found": false,
+        "method": null,
+        "evidence": null,
+        "confidence": 0.146
+      }
+    ],
+    "feedback": "Partially correct: the answer touches on the topic but leaves out several key points. You covered 1 of 6 key concepts. To improve, explain: mutual exclusion, hold and wait, no preemption.",
+    "features": {
+      "semantic_similarity": 0.902716013101431,
+      "concept_coverage": 0.2857142857142857,
+      "completeness": 0.4860557950565917,
+      "length_ratio": 0.19801980198019803,
+      "raw_cosine": 0.8367654085159302,
+      "keyword_only_share": 0.2857142857142857,
+      "word_count": 20,
+      "reference_word_count": 101
+    },
+    "scoring_method": "learned",
+    "backend": "sbert",
+    "percentage": 55.0,
+    "cv_score": 5.5
+  },
+  "A05": {
+    "question": "Explain deadlock in an operating system.",
+    "answer": "Deadlock means the system hangs. It has four conditions: mutual exclusion, hold and wait, no preemption and circular wait.",
+    "teacher_score": 5.5,
+    "score": 5.5,
+    "max_marks": 10,
+    "semantic_similarity": 0.9459689947275015,
+    "concept_coverage": 0.8571428571428571,
+    "completeness": 0.4860682790158408,
+    "concepts": [
+      {
+        "id": "waiting",
+        "name": "Processes blocked waiting for each other's resources",
+        "weight": 2,
+        "found": true,
+        "method": "keyword",
+        "evidence": "holding",
+        "confidence": 1.0
+      },
+      {
+        "id": "mutex",
+        "name": "Mutual exclusion",
+        "weight": 1,
+        "found": true,
+        "method": "keyword",
+        "evidence": "Mutual exclusion",
+        "confidence": 1.0
+      },
+      {
+        "id": "hold_wait",
+        "name": "Hold and wait",
+        "weight": 1,
+        "found": true,
+        "method": "keyword",
+        "evidence": "Hold and wait",
+        "confidence": 1.0
+      },
+      {
+        "id": "no_preempt",
+        "name": "No preemption",
+        "weight": 1,
+        "found": true,
+        "method": "keyword",
+        "evidence": "No preemption",
+        "confidence": 1.0
+      },
+      {
+        "id": "circular",
+        "name": "Circular wait",
+        "weight": 1,
+        "found": true,
+        "method": "keyword",
+        "evidence": "Circular wait",
+        "confidence": 1.0
+      },
+      {
+        "id": "handling",
+        "name": "Handling: prevention / avoidance / detection",
+        "weight": 1,
+        "found": false,
+        "method": null,
+        "evidence": null,
+        "confidence": 0.328
+      }
+    ],
+    "feedback": "Partially correct: the answer touches on the topic but leaves out several key points. You covered 5 of 6 key concepts. To improve, explain: handling: prevention / avoidance / detection.",
+    "features": {
+      "semantic_similarity": 0.9459689947275015,
+      "concept_coverage": 0.8571428571428571,
+      "completeness": 0.4860682790158408,
+      "length_ratio": 0.18811881188118812,
+      "raw_cosine": 0.864879846572876,
+      "keyword_only_share": 0.8571428571428571,
+      "word_count": 19,
+      "reference_word_count": 101
+    },
+    "scoring_method": "learned",
+    "backend": "sbert",
+    "percentage": 55.0,
+    "cv_score": 5.5
+  },
+  "C04": {
+    "question": "Compare TCP and UDP.",
+    "answer": "TCP makes sure every packet arrives and in the correct sequence, resending lost packets, after first setting up a session between both ends. UDP just fires packets off with no setup and no guarantee, which is why live video calls and games prefer it - lower delay matters more than a few lost packets.",
+    "teacher_score": 8.0,
+    "score": 8.0,
+    "max_marks": 10,
+    "semantic_similarity": 0.5795176212604229,
+    "concept_coverage": 0.625,
+    "completeness": 0.6227897894382477,
+    "concepts": [
+      {
+        "id": "transport",
+        "name": "Both are transport layer protocols",
+        "weight": 1,
+        "found": false,
+        "method": null,
+        "evidence": null,
+        "confidence": 0.352
+      },
+      {
+        "id": "connection",
+        "name": "TCP connection-oriented, UDP connectionless",
+        "weight": 2,
+        "found": false,
+        "method": null,
+        "evidence": null,
+        "confidence": 0.433
+      },
+      {
+        "id": "reliability",
+        "name": "TCP reliable, UDP unreliable",
+        "weight": 2,
+        "found": true,
+        "method": "semantic",
+        "evidence": "TCP makes sure every packet arrives and in the correct sequence, resending lost packets, after first setting up a session between both ends.",
+        "confidence": 0.563
+      },
+      {
+        "id": "ordering",
+        "name": "TCP guarantees ordered delivery",
+        "weight": 1,
+        "found": true,
+        "method": "keyword",
+        "evidence": "sequence",
+        "confidence": 1.0
+      },
+      {
+        "id": "speed",
+        "name": "UDP has lower overhead / latency",
+        "weight": 1,
+        "found": true,
+        "method": "semantic",
+        "evidence": "UDP just fires packets off with no setup and no guarantee, which is why live video calls and games prefer it - lower delay matters more than a few lost packets.",
+        "confidence": 0.772
+      },
+      {
+        "id": "use_cases",
+        "name": "Typical applications of each",
+        "weight": 1,
+        "found": true,
+        "method": "keyword",
+        "evidence": "gaming",
+        "confidence": 1.0
+      }
+    ],
+    "feedback": "Good answer: the main idea is correct, but a few important points are missing. You covered 4 of 6 key concepts. To improve, explain: tcp connection-oriented, udp connectionless, both are transport layer protocols.",
+    "features": {
+      "semantic_similarity": 0.5795176212604229,
+      "concept_coverage": 0.625,
+      "completeness": 0.6227897894382477,
+      "length_ratio": 0.654320987654321,
+      "raw_cosine": 0.6266864538192749,
+      "keyword_only_share": 0.25,
+      "word_count": 53,
+      "reference_word_count": 81
+    },
+    "scoring_method": "learned",
+    "backend": "sbert",
+    "percentage": 80.0,
+    "cv_score": 7.5
+  }
+}

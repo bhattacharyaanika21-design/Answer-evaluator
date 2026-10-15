@@ -1,0 +1,128 @@
+[
+  {
+    "id": "Q1",
+    "subject": "Operating Systems",
+    "question": "Explain deadlock in an operating system.",
+    "max_marks": 10,
+    "reference_answer": "Deadlock is a situation in which two or more processes are blocked forever, each waiting for a resource held by another process in the set. A deadlock can occur only when four conditions hold simultaneously: mutual exclusion, where a resource can be used by only one process at a time; hold and wait, where a process holds resources while waiting for others; no preemption, where resources cannot be forcibly taken away; and circular wait, where a circular chain of processes each waits for the next. Deadlocks can be handled by prevention, avoidance such as the Banker's algorithm, or detection and recovery.",
+    "concepts": [
+      {"id": "waiting", "name": "Processes blocked waiting for each other's resources", "weight": 2,
+       "keywords": ["waiting for resource", "wait for resource", "waiting forever", "wait forever", "waiting indefinitely", "block indefinitely", "blocked forever", "permanently blocked", "held by another", "held by each other", "held by other", "holding"]},
+      {"id": "mutex", "name": "Mutual exclusion", "weight": 1,
+       "keywords": ["mutual exclusion", "mutually exclusive", "one process at a time", "non shareable", "non sharable"]},
+      {"id": "hold_wait", "name": "Hold and wait", "weight": 1,
+       "keywords": ["hold and wait", "holds resources while waiting", "hold while waiting", "holding a resource while"]},
+      {"id": "no_preempt", "name": "No preemption", "weight": 1,
+       "keywords": ["no preemption", "cannot be preempted", "not preempted", "cannot be forcibly", "cannot be taken away", "can not be taken away"]},
+      {"id": "circular", "name": "Circular wait", "weight": 1,
+       "keywords": ["circular wait", "circular chain", "cycle", "circular"]},
+      {"id": "handling", "name": "Handling: prevention / avoidance / detection", "weight": 1,
+       "keywords": ["prevention", "prevented", "avoidance", "avoided", "banker", "detection", "detected", "recovery", "wait for graph"]}
+    ]
+  },
+  {
+    "id": "Q2",
+    "subject": "DBMS",
+    "question": "What is normalization in DBMS?",
+    "max_marks": 10,
+    "reference_answer": "Normalization is the process of organizing data in a relational database to reduce data redundancy and improve data integrity. It decomposes large tables into smaller related tables and removes insertion, update and deletion anomalies. It is based on functional dependencies and proceeds through normal forms: first normal form (1NF) requires atomic values, second normal form (2NF) removes partial dependencies, third normal form (3NF) removes transitive dependencies, and BCNF requires every determinant to be a candidate key.",
+    "concepts": [
+      {"id": "redundancy", "name": "Reduces data redundancy", "weight": 2,
+       "keywords": ["redundancy", "redundant", "duplicate", "duplication", "repeated data", "repetition"]},
+      {"id": "anomalies", "name": "Removes insertion / update / deletion anomalies", "weight": 1,
+       "keywords": ["anomaly", "anomalies", "insertion", "deletion", "update anomaly"]},
+      {"id": "decomposition", "name": "Decomposes large tables into smaller ones", "weight": 1,
+       "keywords": ["decompose", "decomposition", "split table", "splitting a big table", "smaller table", "divide table", "break table", "dividing table"]},
+      {"id": "fd", "name": "Based on functional dependencies", "weight": 1,
+       "keywords": ["functional dependency", "dependency", "dependencies", "depend on"]},
+      {"id": "normal_forms", "name": "Normal forms (1NF, 2NF, 3NF, BCNF)", "weight": 1,
+       "keywords": ["1nf", "2nf", "3nf", "bcnf", "normal form", "first normal"]},
+      {"id": "integrity", "name": "Improves data integrity / consistency", "weight": 1,
+       "keywords": ["integrity", "consistency", "consistent"]}
+    ]
+  },
+  {
+    "id": "Q3",
+    "subject": "Computer Networks",
+    "question": "Compare TCP and UDP.",
+    "max_marks": 10,
+    "reference_answer": "TCP (Transmission Control Protocol) and UDP (User Datagram Protocol) are transport layer protocols. TCP is connection-oriented: it establishes a connection with a three-way handshake and provides reliable, ordered delivery using acknowledgements, retransmission, flow control and congestion control. UDP is connectionless and unreliable; it sends independent datagrams without acknowledgements or ordering, so it has lower overhead and latency. TCP is used for web browsing, email and file transfer, while UDP is used for video streaming, online gaming, VoIP and DNS.",
+    "concepts": [
+      {"id": "transport", "name": "Both are transport layer protocols", "weight": 1,
+       "keywords": ["transport layer", "transport protocol", "layer 4"]},
+      {"id": "connection", "name": "TCP connection-oriented, UDP connectionless", "weight": 2,
+       "keywords": ["connection oriented", "connectionless", "handshake"]},
+      {"id": "reliability", "name": "TCP reliable, UDP unreliable", "weight": 2,
+       "keywords": ["reliable", "unreliable", "reliability", "guaranteed delivery", "acknowledgement", "acknowledgment", "retransmission"]},
+      {"id": "ordering", "name": "TCP guarantees ordered delivery", "weight": 1,
+       "keywords": ["in order", "ordered", "sequence", "ordering"]},
+      {"id": "speed", "name": "UDP has lower overhead / latency", "weight": 1,
+       "keywords": ["faster", "overhead", "latency", "lightweight", "low delay"]},
+      {"id": "use_cases", "name": "Typical applications of each", "weight": 1,
+       "keywords": ["streaming", "gaming", "game", "voip", "dns", "email", "browsing", "file transfer", "http", "video"]}
+    ]
+  },
+  {
+    "id": "Q4",
+    "subject": "Operating Systems",
+    "question": "Explain virtual memory.",
+    "max_marks": 10,
+    "reference_answer": "Virtual memory is a memory management technique that lets a process use more memory than is physically available by using a portion of secondary storage (disk) as an extension of RAM. Each process gets its own logical address space, and the memory management unit translates logical addresses to physical addresses using page tables. Memory is divided into fixed-size pages; with demand paging, a page is loaded only when it is needed, and accessing a page not in memory causes a page fault. When memory is full, a page replacement algorithm such as LRU or FIFO chooses a page to swap out. Too much swapping leads to thrashing.",
+    "concepts": [
+      {"id": "illusion", "name": "Gives more memory than physically present", "weight": 2,
+       "keywords": ["more memory than", "more than physical", "larger than physical", "larger than ram", "exceed physical", "illusion"]},
+      {"id": "disk", "name": "Uses secondary storage (disk) as extension of RAM", "weight": 1,
+       "keywords": ["disk", "secondary storage", "hard drive", "swap space", "ssd"]},
+      {"id": "translation", "name": "Address translation (MMU, page tables)", "weight": 1,
+       "keywords": ["logical address", "virtual address", "physical address", "page table", "mmu", "address translation"]},
+      {"id": "paging", "name": "Paging, demand paging and page faults", "weight": 1,
+       "keywords": ["page fault", "demand paging", "on demand", "paging"]},
+      {"id": "replacement", "name": "Page replacement (LRU, FIFO)", "weight": 1,
+       "keywords": ["replacement", "lru", "fifo", "swap out", "victim page"]},
+      {"id": "thrashing", "name": "Thrashing", "weight": 1,
+       "keywords": ["thrashing", "thrash"]}
+    ]
+  },
+  {
+    "id": "Q5",
+    "subject": "Machine Learning",
+    "question": "What is overfitting in machine learning?",
+    "max_marks": 10,
+    "reference_answer": "Overfitting happens when a machine learning model learns the training data too closely, including its noise and random fluctuations, instead of the underlying pattern. As a result the model performs very well on training data but poorly on unseen test data, meaning it fails to generalize. It is usually caused by a model that is too complex relative to the amount of training data. Overfitting corresponds to low bias and high variance. It can be reduced with more training data, regularization such as L1 or L2, cross-validation, early stopping, dropout, or simplifying the model.",
+    "concepts": [
+      {"id": "memorize", "name": "Learns noise / memorizes training data", "weight": 2,
+       "keywords": ["noise", "memorize", "memorise", "too closely", "learns the training data too well"]},
+      {"id": "gap", "name": "Good on training data, poor on unseen data", "weight": 2,
+       "keywords": ["unseen data", "new data", "test data", "test accuracy", "test error", "low accuracy on test"]},
+      {"id": "generalize", "name": "Fails to generalize", "weight": 1,
+       "keywords": ["generalize", "generalise", "generalization", "generalisation"]},
+      {"id": "complexity", "name": "Caused by excessive model complexity", "weight": 1,
+       "keywords": ["too complex", "complex model", "complexity", "too many parameters", "too many features"]},
+      {"id": "variance", "name": "High variance, low bias", "weight": 1,
+       "keywords": ["variance", "bias"]},
+      {"id": "remedies", "name": "Remedies (regularization, dropout, more data, ...)", "weight": 1,
+       "keywords": ["regularization", "regularisation", "l1", "l2", "dropout", "early stopping", "cross validation", "more data", "pruning"]}
+    ]
+  },
+  {
+    "id": "Q6",
+    "subject": "Operating Systems",
+    "question": "What is CPU scheduling?",
+    "max_marks": 10,
+    "reference_answer": "CPU scheduling is the activity of the operating system that decides which process in the ready queue gets the CPU next, so that the CPU is kept busy and multiprogramming is efficient. Scheduling can be preemptive, where a running process can be interrupted, or non-preemptive. Common algorithms are First Come First Served (FCFS), Shortest Job First (SJF), Priority scheduling and Round Robin, which gives each process a fixed time quantum. Schedulers are evaluated using criteria such as CPU utilization, throughput, turnaround time, waiting time and response time.",
+    "concepts": [
+      {"id": "ready_queue", "name": "Selects the next process from the ready queue", "weight": 2,
+       "keywords": ["ready queue", "which process", "selects a process", "select a process", "choose a process", "next process"]},
+      {"id": "preemptive", "name": "Preemptive vs non-preemptive", "weight": 1,
+       "keywords": ["preemptive", "non preemptive", "preemption"]},
+      {"id": "algorithms", "name": "Algorithms: FCFS, SJF, Priority, Round Robin", "weight": 1,
+       "keywords": ["fcfs", "first come", "sjf", "shortest job", "round robin", "priority scheduling", "srtf"]},
+      {"id": "quantum", "name": "Time quantum in Round Robin", "weight": 1,
+       "keywords": ["time quantum", "time slice", "quantum"]},
+      {"id": "criteria", "name": "Criteria: throughput, waiting / turnaround / response time", "weight": 1,
+       "keywords": ["throughput", "turnaround", "waiting time", "response time", "cpu utilization", "cpu utilisation"]},
+      {"id": "utilization", "name": "Keeps the CPU busy (multiprogramming)", "weight": 1,
+       "keywords": ["cpu busy", "idle", "multiprogramming", "maximize cpu"]}
+    ]
+  }
+]
